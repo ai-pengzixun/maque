@@ -1,0 +1,28 @@
+{
+  "name": "百度搜索示例",
+  "description": "使用指定关键词进行百度搜索的示例智能体",
+  "status": "READY",
+  "type": "robot",
+  "robot_file": "agent.robot",
+  "version": "1.0.0",
+  "author": "JianRuJiaJing Team",
+  "required_files": [
+    "agent.json",
+    "agent.py",
+    "agent.robot",
+    "baidu_search.py"
+  ],
+  "extra_files": [],
+  "dependencies": [
+    "robotframework",
+    "selenium"
+  ],
+  "inputs": [
+    {
+      "name": "SEARCH_KEYWORD",
+      "type": "string",
+      "default": "Kimi",
+      "description": "要搜索的关键词"
+    }
+  ]
+}

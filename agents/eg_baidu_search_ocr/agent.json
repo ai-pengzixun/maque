@@ -1,0 +1,30 @@
+{
+  "name": "百度搜索OCR智能体",
+  "description": "使用OCR技术进行百度搜索的智能体，通过视觉识别完成搜索操作",
+  "status": "READY",
+  "type": "robot",
+  "robot_file": "agent.robot",
+  "version": "1.0.0",
+  "author": "JianRuJiaJing Team",
+  "required_files": [
+    "agent.json",
+    "agent.py",
+    "agent.robot",
+    "baidu_search_ocr.py"
+  ],
+  "extra_files": [],
+  "dependencies": [
+    "robotframework",
+    "selenium",
+    "pytesseract",
+    "opencv-python"
+  ],
+  "inputs": [
+    {
+      "name": "SEARCH_KEYWORD",
+      "type": "string",
+      "default": "Kimi",
+      "description": "要搜索的关键词"
+    }
+  ]
+}
